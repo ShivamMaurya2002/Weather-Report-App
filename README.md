@@ -1,0 +1,2 @@
+# Weather-Report-App
+WeatherSphere is a responsive weather web app built with HTML, CSS, JS, and OpenWeatherMap API. It shows real-time weather, a 5-day forecast, dark/light mode, live clock, and animated UI. Search any city globally and get instant weather info. Created by CodeWithShivam.
