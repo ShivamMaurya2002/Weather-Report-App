@@ -1,4 +1,3 @@
-
 // DOM Elements
 const body = document.body;
 const themeToggle = document.getElementById('themeToggle');
