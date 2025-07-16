@@ -235,3 +235,7 @@ cityInput.addEventListener('keypress', (e) => {
         handleSearch();
     }
 });
+
+// ✅ Set default input value and fetch weather for Bangalore on load
+cityInput.value = 'Bangalore';
+fetchWeather('Bangalore');
