@@ -167,7 +167,7 @@ function updateForecast(data) {
 
     // Create forecast cards
     Object.entries(dailyForecasts).forEach(([day, forecast], index) => {
-        if (index >= 5) return; // Limit to 5 days
+        if (index >= 5) return;
 
         const card = document.createElement('div');
         card.className = 'forecast-card';
@@ -236,6 +236,6 @@ cityInput.addEventListener('keypress', (e) => {
     }
 });
 
-// ✅ Set default input value and fetch weather for Bangalore on load
+//  Default weather report for Bangalore
 cityInput.value = 'Bangalore';
 fetchWeather('Bangalore');
