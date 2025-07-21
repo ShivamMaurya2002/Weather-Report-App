@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeatherSphere</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Weather_Report.css">
 </head>
-
 <body>
-    <!-- Cloud Animation Background -->
-    <div class="cloud-animation" id="cloudAnimation"></div>
-
-    <!-- Header -->
+    <div class="cloud-animation" id="cloudAnimation"></div>  <!-- Cloud Animation Background -->
+     <!-- Header -->
     <header class="navbar">
-        <div class="logo">
-            <i class="fas fa-cloud-sun"></i> WeatherSphere
-        </div>
-        <div class="datetime-container">
-            <div id="datetime" class="datetime"></div>
-        </div>
-        <button class="theme-toggle" id="themeToggle">
-            <i class="fas fa-moon"></i>
-        </button>
+        <div class="logo"> <i class="fas fa-cloud-sun"></i> WeatherSphere </div>
+        <div class="datetime-container"> <div id="datetime" class="datetime"></div> </div>
+        <button class="theme-toggle" id="themeToggle"> <i class="fas fa-moon"></i> </button>
     </header>
-
     <!-- Main Content -->
     <main class="container">
-        <section class="card">
-            <!-- Search Input -->
+        <section class="card"> <!-- Search Input -->
             <div class="search-box">
                 <div class="search-bar">
                     <input type="text" id="cityInput" placeholder="Search for a city...">
@@ -40,18 +27,15 @@
                     </button>
                 </div>
             </div>
-
             <!-- Error Message -->
             <div class="error" id="errorBox">
                 <i class="fas fa-exclamation-circle"></i> Invalid location, please try again!
             </div>
-
             <!-- Loading Indicator -->
             <div class="loading" id="loadingIndicator">
                 <div class="loading-spinner"></div>
                 <p>Fetching weather data...</p>
             </div>
-
             <!-- Current Weather -->
             <div class="weather" id="weatherContainer">
                 <div class="current-weather">
@@ -62,7 +46,6 @@
                         <p class="description" id="description">Weather Description</p>
                     </div>
                 </div>
-
                 <!-- Weather Details -->
                 <div class="details">
                     <div class="info-box">
@@ -83,9 +66,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Forecast Section -->
-            <div class="forecast">
+            <div class="forecast">  <!-- Forecast Section -->
                 <h3 id="forecastToggle"><i class="fas fa-chevron-down"></i> 5-Day Forecast</h3>
                 <div class="forecast-cards" id="forecastContainer">
                     <!-- Forecast cards will be inserted here by JavaScript -->
@@ -96,15 +77,9 @@
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>© <span id="currentYear"></span> <strong>CodeWithShivam - WeatherSphere</strong> | Built with ❤️ using <a
-                href="https://openweathermap.org" target="_blank">OpenWeatherMap API</a></p>
+    <footer> <!-- Footer -->
+        <p>© <span id="currentYear"></span> <strong>CodeWithShivam - WeatherSphere</strong> | Built with ❤️ using <a href="https://openweathermap.org" target="_blank">OpenWeatherMap API</a></p>
     </footer>
-
-
     <script src="Weather_Report.js"></script>
 </body>
-
 </html>
