@@ -641,6 +641,7 @@ body.dark-mode .mist { background: linear-gradient(135deg, #2d3748 0%, #1a202c 1
   .card { padding: 20px; }
 
   .details { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+    
 }
 
 /* Tablets & Big Phones */
