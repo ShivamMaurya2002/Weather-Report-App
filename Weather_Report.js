@@ -1,22 +1,36 @@
 // DOM Elements
 const body = document.body;
+
 const themeToggle = document.getElementById('themeToggle');
+
 const datetimeElement = document.getElementById('datetime');
+
 const currentYear = document.getElementById('currentYear');
+
 const cityInput = document.getElementById('cityInput');
+
 const searchBtn = document.getElementById('searchBtn');
+
 const errorBox = document.getElementById('errorBox');
+
 const loadingIndicator = document.getElementById('loadingIndicator');
+
 const weatherContainer = document.getElementById('weatherContainer');
+
 const forecastToggle = document.getElementById('forecastToggle');
+
 const forecastContainer = document.getElementById('forecastContainer');
+
 const forecastDetail = document.getElementById('forecastDetail');
+
 
 // API Key
 const API_KEY = 'f799efbb5a1af014a7aed2d9fceec541';
 
+
 // Initialize with empty data
-function initializeEmptyData() {
+function initializeEmptyData() 
+{
     document.getElementById('city').textContent = '--';
     document.getElementById('temperature').textContent = '--°C';
     document.getElementById('description').textContent = '--';
@@ -30,9 +44,11 @@ function initializeEmptyData() {
     weatherContainer.style.display = 'flex';
 }
 
+
 // Set current year in footer
 currentYear.textContent = new Date().getFullYear();
 initializeEmptyData();
+
 
 // Theme Toggle
 themeToggle.addEventListener('click', () => {
@@ -42,14 +58,18 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('darkMode', isDarkMode);
 });
 
+
 // Check for saved theme preference
-if (localStorage.getItem('darkMode') === 'true') {
+if (localStorage.getItem('darkMode') === 'true') 
+{
     body.classList.add('dark-mode');
     themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
 }
 
+
 // Update Date and Time with seconds
-function updateDateTime() {
+function updateDateTime() 
+{
     const now = new Date();
     const options = {
         weekday: 'long',
@@ -63,13 +83,17 @@ function updateDateTime() {
     datetimeElement.textContent = now.toLocaleDateString('en-US', options);
 }
 
+
 // Update time every second
 updateDateTime();
 setInterval(updateDateTime, 1000);
 
+
 // Fetch weather data with case-insensitive search
-async function fetchWeather(location) {
-    try {
+async function fetchWeather(location) 
+{
+    try 
+    {
         // Show loading indicator
         loadingIndicator.style.display = 'block';
         weatherContainer.style.display = 'none';
@@ -80,15 +104,19 @@ async function fetchWeather(location) {
             `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(location)}&units=metric&appid=${API_KEY}`
         );
 
+        
         // If direct search fails, try with different combinations
-        if (!currentResponse.ok) {
+        if (!currentResponse.ok) 
+        {
             // Try with lowercase
             currentResponse = await fetch(
                 `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(location.toLowerCase())}&units=metric&appid=${API_KEY}`
             );
         }
+        
 
-        if (!currentResponse.ok) {
+        if (!currentResponse.ok) 
+        {
             // Try with capitalized first letter
             const capitalized = location.toLowerCase().replace(/\b\w/g, l => l.toUpperCase());
             currentResponse = await fetch(
@@ -96,31 +124,40 @@ async function fetchWeather(location) {
             );
         }
 
-        if (!currentResponse.ok) {
+        
+        if (!currentResponse.ok) 
+        {
             throw new Error('Location not found');
         }
 
+        
         const currentData = await currentResponse.json();
 
+        
         // Fetch forecast using the coordinates from current weather to ensure accuracy
         const forecastResponse = await fetch(
             `https://api.openweathermap.org/data/2.5/forecast?lat=${currentData.coord.lat}&lon=${currentData.coord.lon}&units=metric&appid=${API_KEY}`
         );
 
-        if (!forecastResponse.ok) {
+        
+        if (!forecastResponse.ok) 
+        {
             throw new Error('Forecast not available');
         }
-
+        
         const forecastData = await forecastResponse.json();
 
         // Update UI
         updateCurrentWeather(currentData);
         updateForecast(forecastData);
 
+        
         // Hide loading indicator and show weather
         loadingIndicator.style.display = 'none';
         weatherContainer.style.display = 'flex';
-    } catch (error) {
+    } 
+    catch (error) 
+    {
         console.error('Error fetching weather data:', error);
         loadingIndicator.style.display = 'none';
         errorBox.style.display = 'block';
@@ -128,8 +165,10 @@ async function fetchWeather(location) {
     }
 }
 
+
 // Update current weather UI
-function updateCurrentWeather(data) {
+function updateCurrentWeather(data) 
+{
     const locationName = data.name || 'Unknown Location';
     const country = data.sys?.country || '';
     document.getElementById('city').textContent = country ? `${locationName}, ${country}` : locationName;
@@ -141,34 +180,44 @@ function updateCurrentWeather(data) {
     document.getElementById('feelsLike').textContent = `Feels Like: ${data.main.feels_like ? Math.round(data.main.feels_like) : '--'}°C`;
 
     // Update weather icon
-    if (data.weather[0]?.icon) {
+    if (data.weather[0]?.icon) 
+    {
         document.getElementById('weatherIcon').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         document.getElementById('weatherIcon').alt = data.weather[0].main || 'Weather icon';
-    } else {
+    } 
+    else 
+    {
         document.getElementById('weatherIcon').src = '';
     }
 }
 
+
 // Update forecast UI
-function updateForecast(data) {
+function updateForecast(data) 
+{
     forecastContainer.innerHTML = '';
     forecastDetail.innerHTML = '';
 
+    
     // Group forecasts by day
     const dailyForecasts = {};
     data.list.forEach(item => {
         const date = new Date(item.dt * 1000);
         const day = date.toLocaleDateString('en-US', { weekday: 'short' });
 
-        if (!dailyForecasts[day]) {
+        
+        if (!dailyForecasts[day]) 
+        {
             dailyForecasts[day] = item;
         }
     });
 
+    
     // Create forecast cards
     Object.entries(dailyForecasts).forEach(([day, forecast], index) => {
         if (index >= 5) return;
 
+        
         const card = document.createElement('div');
         card.className = 'forecast-card';
         card.innerHTML = `
@@ -178,14 +227,17 @@ function updateForecast(data) {
                     <div class="forecast-desc">${forecast.weather[0]?.main || '--'}</div>
                 `;
 
+        
         // Add click event to show detailed forecast
         card.addEventListener('click', () => showForecastDetail(forecast, day));
         forecastContainer.appendChild(card);
     });
 }
 
+
 // Show detailed forecast
-function showForecastDetail(forecast, day) {
+function showForecastDetail(forecast, day) 
+{
     forecastDetail.innerHTML = `
                 <h4>${day} Details</h4>
                 <div class="detail-row">
@@ -212,21 +264,27 @@ function showForecastDetail(forecast, day) {
     forecastDetail.style.display = 'block';
 }
 
+
 // Toggle forecast visibility
-forecastToggle.addEventListener('click', function () {
+forecastToggle.addEventListener('click', function () 
+{
     const isHidden = forecastContainer.style.display === 'none';
     forecastContainer.style.display = isHidden ? 'flex' : 'none';
     forecastDetail.style.display = 'none';
     this.querySelector('i').style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
 });
 
+
 // Search functionality with case-insensitive handling
-function handleSearch() {
+function handleSearch() 
+{
     const location = cityInput.value.trim();
-    if (location) {
+    if (location) 
+    {
         fetchWeather(location);
     }
 }
+
 
 searchBtn.addEventListener('click', handleSearch);
 
@@ -235,6 +293,7 @@ cityInput.addEventListener('keypress', (e) => {
         handleSearch();
     }
 });
+
 
 //  Default weather report for Bangalore
 cityInput.value = 'Bangalore';
