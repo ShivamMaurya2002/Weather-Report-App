@@ -289,7 +289,8 @@ function handleSearch()
 searchBtn.addEventListener('click', handleSearch);
 
 cityInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === 'Enter') 
+    {
         handleSearch();
     }
 });
