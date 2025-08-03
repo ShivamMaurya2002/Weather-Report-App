@@ -51,4 +51,17 @@
 
 ---
 
+## 📊 Language Stats (Weather-Report-App)
+
+<p align="center" style="font-family: sans-serif;">
+  <img src="https://img.shields.io/badge/JavaScript-50%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" />
+  <br><br>
+  <img src="https://img.shields.io/badge/CSS-33%25-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
+  <br><br>
+  <img src="https://img.shields.io/badge/HTML-17%25-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
+</p>
+
+
+---
+
 <p align="center">Made with ❤️ by <a href="https://github.com/ShivamMaurya2002">Shivam Maurya</a></p>
