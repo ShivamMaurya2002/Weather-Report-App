@@ -25,7 +25,7 @@
 <h2 align="center">🛠️ Tech Stack</h2>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,vscode" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shivammaurya2002&repo=Weather-Report-App&theme=great-gatsby&hide_border=false&include_all_commits=true&layout=compact" width="350" alt="Top Languages for Weather-Report-App" />
 </p>
 
 ---
