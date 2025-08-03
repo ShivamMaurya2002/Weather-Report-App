@@ -25,10 +25,19 @@
 <h2 align="center">🛠️ Tech Stack</h2>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,vscode" />
-</p>
-
-### 📦 Badges
+  <span style="margin: 0 10px;">
+    <img src="https://skillicons.dev/icons?i=html&theme=light" alt="HTML" />
+  </span>
+  &nbsp;&nbsp;<span style="margin: 0 10px;">
+    <img src="https://skillicons.dev/icons?i=css&theme=light" alt="CSS" />
+  </span>
+  &nbsp;&nbsp;<span style="margin: 0 10px;">
+    <img src="https://skillicons.dev/icons?i=js&theme=light" alt="JavaScript" />
+  </span>
+  &nbsp;&nbsp;<span style="margin: 0 10px;">
+    <img src="https://skillicons.dev/icons?i=vscode&theme=light" alt="VS Code" />
+  </span>
+</p></br>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-007ACC?style=for-the-badge&logo=javascript&logoColor=white" />
@@ -50,23 +59,4 @@
 
 ---
 
-### 🔐 API Integration
-
-- **Provider**: [OpenWeatherMap API](https://openweathermap.org/api)
-- **Required**: API key (free to register)
-- **Usage**:
-  - City input is used to fetch current weather data
-  - Parsed and displayed using Fetch API in JavaScript
-
----
-
-### 🧪 How to Run Locally
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/ShivamMaurya2002/Weather-Report-App.git
-
-# 2. Navigate into the project
-cd Weather-Report-App
-
-# 3. Open index.html in your browser
+<p align="center">Made with ❤️ by <a href="https://github.com/ShivamMaurya2002">Shivam Maurya</a></p>
