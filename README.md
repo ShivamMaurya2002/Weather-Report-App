@@ -54,9 +54,9 @@
 ### 📊 Language Usage Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shivammaurya2002&theme=great-gatsby&hide_border=false&include_all_commits=true&count_private=true&layout=compact" width="350" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shivammaurya2002&repo=Weather-Report-App&theme=great-gatsby&hide_border=false&include_all_commits=true&layout=compact" width="350" alt="Top Languages for Weather-Report-App" />
 </p>
-
+  
 ---
 
 <p align="center">Made with ❤️ by <a href="https://github.com/ShivamMaurya2002">Shivam Maurya</a></p>
