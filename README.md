@@ -54,8 +54,9 @@
 ### 📊 Language Usage Stats
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shivammaurya2002&repo=Weather-Report-App&..."/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=…&repo=…&…layout=compact" />
 </p>
+
   
 ---
 
