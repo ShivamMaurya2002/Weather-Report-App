@@ -55,7 +55,7 @@
 <h2 align="center"> 📊 Language Stats </h2> 
 
 <p align="center" style="font-family: sans-serif;">
-  <img src="https://img.shields.io/badge/CSS-56.9%25-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
+<img src="https://img.shields.io/badge/CSS-56.9%25-800080?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
   <br><br>
   <img src="https://img.shields.io/badge/JavaScript-30.4%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" />
   <br><br>
