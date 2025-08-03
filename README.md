@@ -38,7 +38,7 @@
   &nbsp;&nbsp;<span style="margin: 0 10px;">
     <img src="https://skillicons.dev/icons?i=vscode&theme=light" alt="VS Code" />
   </span>
-</p></br>
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JavaScript-007ACC?style=for-the-badge&logo=javascript&logoColor=white" />
@@ -55,11 +55,11 @@
 <h2 align="center"> 📊 Language Stats </h2> 
 
 <p align="center" style="font-family: sans-serif;">
-  <img src="https://img.shields.io/badge/JavaScript-50%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/CSS-56.9%25-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
   <br><br>
-  <img src="https://img.shields.io/badge/CSS-33%25-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
+  <img src="https://img.shields.io/badge/JavaScript-30.4%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" />
   <br><br>
-  <img src="https://img.shields.io/badge/HTML-17%25-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
+  <img src="https://img.shields.io/badge/HTML-12.7%25-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
 </p>
 
 
