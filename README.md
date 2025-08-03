@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ShivamMaurya2002/Weather-Report-App/main/assets/home.png" width="400" alt="Weather App Screenshot" 
-    style="width: 100%; height: 500px; object-fit: cover; border-radius: 8px;"  />
+    style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;"  />
 </p>
 
 ---
@@ -52,7 +52,7 @@
 
 ---
 
-## 📊 Language Stats (Weather-Report-App)
+<h2 align="center"> 📊 Language Stats </h2> 
 
 <p align="center" style="font-family: sans-serif;">
   <img src="https://img.shields.io/badge/JavaScript-50%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript" />
