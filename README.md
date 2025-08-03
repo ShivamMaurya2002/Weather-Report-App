@@ -1,7 +1,7 @@
 <h1 align="center">⛅ Weather Report App 🌦️</h1>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ShivamMaurya2002/Weather-Report-App/main/assets/weather-screenshot.png" width="400" alt="Weather App Screenshot" />
+  <img src="https://raw.githubusercontent.com/ShivamMaurya2002/Weather-Report-App/main/assets/home.png" width="800" alt="Weather App Screenshot" />
 </p>
 
 ---
