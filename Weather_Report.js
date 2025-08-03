@@ -296,5 +296,5 @@ cityInput.addEventListener('keypress', (e) => {
 });
 
 //  Default weather report for Bangalore
-cityInput.value = 'Ayodhya';
-fetchWeather('Ayodhya');
+cityInput.value = 'Bangalore';
+fetchWeather('Bangalore');
