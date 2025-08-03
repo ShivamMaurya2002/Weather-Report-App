@@ -24,10 +24,9 @@
 
 <h2 align="center">🛠️ Tech Stack</h2>
 
-### 📊 Language Usage Stats
-
-
----
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,vscode" />
+</p>
 
 ### 📦 Badges
 
